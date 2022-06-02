@@ -3,7 +3,7 @@ const fs = require ('fs');
 class Contenedor {
     constructor (fileName){
         this.fileName = fileName;
-      /*   fs.promises.writeFile(`./${fileName}`, '')   */
+        fs.promises.writeFile(`./${fileName}`, '')   
         }    
     
     async save(objeto) {
@@ -75,24 +75,13 @@ async function Main(){
 
 const productos = new Contenedor('productos.txt');   
 
-/* 
-Estos son los del desafio
-productos.save({title:"Tabla de Surf", price: 3500, thumbnail:"https://mlstaticquic-a.akamaihd.net/tabla-de-surf-65-D_NQ_NP_718715-MLU30067594313_042019-F.jpg"}).then(id=>{
-    console.log(id)    
-    productos.save({title:"Kayak", price: 6500, thumbnail:"https://http2.mlstatic.com/kayak-transparente-importado-winnerkayak-D_NQ_NP_695701-MLC20371941735_082015-O.jpg"}).then(id2=>{
-    console.log(id2)    
-})    
-}) */
 
-// Estos son los de prueba
-
-
-await productos.save({title:"Titulo 1", price: 3500, thumbnail:"Mensaje 1"})
-await productos.save({title:"Titulo 2", price: 6500, thumbnail:"Mensaje 2"})  
-await productos.getByID(3) 
+await productos.save({title:"Tabla de Surf", price: 3500, thumbnail:"https://mlstaticquic-a.akamaihd.net/tabla-de-surf-65-D_NQ_NP_718715-MLU30067594313_042019-F.jpg"})
+await productos.save({title:"Kayak", price: 6500, thumbnail:"https://http2.mlstatic.com/kayak-transparente-importado-winnerkayak-D_NQ_NP_695701-MLC20371941735_082015-O.jpg"})  
+await productos.getByID(3) //Esto indica que se imprime en pantalla (si existe) producto con el id 3
 await productos.getAll()
-await productos.deleteById(7)  
-await productos.deleteAll()
+await productos.deleteById(7)  //Esto indica que se eliminaria (si existe) producto con el id 7
+await productos.deleteAll() //borra el archivo de nuevo
 }
 
 Main();
