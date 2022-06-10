@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  },
+  "name": "desafio-03",
+  "version": "1.0.0",
+  "main": "consigna01.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
