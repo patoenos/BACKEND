@@ -86,7 +86,6 @@ await productos.deleteById(7)  //Esto indica que se eliminaria (si existe) produ
 await productos.deleteAll() //borra el archivo de nuevo
  */ 
 console.log("El tipo de datos producto instanciado es: "); //Hago esta prueba no sé 
-await console.log(JSON.stringify(productos.getAll()));
 console.log("ora que");
 
 //Desafio 3:

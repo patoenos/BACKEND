@@ -8,7 +8,7 @@
   "main": "consigna01.js",
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon ./"
+    "start": "nodemon ./desafio03.js"
   },
   "keywords": [],
   "author": "",
