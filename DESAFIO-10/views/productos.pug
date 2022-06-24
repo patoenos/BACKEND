@@ -1,0 +1,21 @@
+extends layout/layout.pug
+
+block layout 
+    section.productos
+        h2 PRODUCTOS
+            if items 
+                table
+                    tr
+                        th TITULO
+                        th PORTADA
+                        th PRECIO
+                    
+                
+                    each item in items
+                        tr
+                            td= item.title 
+                            td
+                                img(alt="item img", width="200px", src=`${item.thumbnail}`)
+                            td= `$${item.price} MXN`
+            else
+                p No hay productos
