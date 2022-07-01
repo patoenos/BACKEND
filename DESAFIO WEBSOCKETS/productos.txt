@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Volante Fanatec Sim Racing",
+		"price": 5500,
+		"thumbnail": "https://esportsimracing.altervista.org/wp-content/uploads/2020/05/fanatec-csl-elite-960x960.jpg",
+		"id": 1
+	},
+	{
+		"title": "Pedales Alkentech",
+		"price": 4600,
+		"thumbnail": "https://www.cranfieldsimulation.com/wp-content/uploads/sites/2/2020/05/pedals4_2.jpg",
+		"id": 2
+	},
+	{
+		"title": "Palanca Thrustmaster",
+		"price": 1950,
+		"thumbnail": "https://www.volantessimracing.top/wp-content/uploads/2021/03/palanca-de-cambios-thrustmaster-TH8A-.jpg",
+		"id": 3
+	},
+	{
+		"title": "Asiento SPARCO Azul",
+		"price": 4000,
+		"thumbnail": "https://th.bing.com/th/id/OIP.on0U4md9HDIKMKeTI2qYoQHaFj?pid=ImgDet&rs=1",
+		"id": 4
+	},
+	{
+		"title": "Fanatec Sim Racing Cockpit",
+		"price": 13900,
+		"thumbnail": "https://preview.redd.it/9q6j8rugixm41.jpg?auto=webp&s=ea336044c64ab8e1d7bacd51de1a09777e9c5238",
+		"id": 5
+	}
+]

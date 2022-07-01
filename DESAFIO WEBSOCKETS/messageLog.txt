@@ -1,0 +1,14 @@
+[
+	{
+		"username": "antonio@hola",
+		"localTs": "30/06/2022 23:28:16",
+		"message": "hola",
+		"id": 1
+	},
+	{
+		"username": "pedro@hola",
+		"localTs": "30/06/2022 23:28:27",
+		"message": "q pex",
+		"id": 2
+	}
+]

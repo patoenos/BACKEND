@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Desafio Web Socket</title>
+</head>
+
+<body>
+    <div >
+        <nav >
+            <div  id="navbarSupportedContent">
+                <ul >
+                    <li> 
+                        <a  href="/">Agrega un Producto</a>
+                    </li>
+                    <li >
+                        <a  href="/productos">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+     <h1>Agregar producto</h1>
+    <form action="/productos" method="POST" id="productForm">
+        <div>
+            <label for="title" >Nombre:</label>
+            <input type="text" name="title" id="nameInput"  required>
+        </div>
+        <div >
+            <label for="price" >Precio:</label>
+            <input type="text" name="price" id="priceInput"   required>
+        </div>
+        <div>
+            <label for="thumbnail" >Thumbnail:</label>
+            <input type="text" name="thumbnail" id="urlInput"  required>
+        </div>
+        <button type="submit">Agrega el producto</button>
+    </form>
+
+   
+    <h1>Listado de productos</h1>
+    <div id="productPool" ></div>
+   
+    <h1>Chat</h1>
+    <form id="formMessage" >
+        <div>
+            <label">Usuario:</label>
+            <input type="email" id="usernameInput"  required>
+        </div>
+        <div>
+            <label>Mensaje:</label>
+            <input type="text" id="messageInput"  required>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <ul id="messagePool">
+    </ul>    
+
+    <!-- CDNs de Socket y Handle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+ 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./client.socket.js"></script>
+</body>
+
+</html>
